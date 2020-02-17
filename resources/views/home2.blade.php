@@ -20,7 +20,9 @@
 
   <!-- Data Table link css-->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.semanticui.min.css"> -->
+  
   <!-- Data Table link css (add Symantic UI)-->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.semanticui.min.css"> -->
@@ -32,7 +34,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -177,9 +179,9 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small btn-success" placeholder="Search company..." aria-label="Search" aria-describedby="basic-addon2">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search company..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
-                <button class="btn btn-primary bg-success" type="button">
+                <button class="btn btn-primary" type="button">
                   <i class="fas fa-search fa-sm"></i>
                 </button>
               </div>
@@ -218,9 +220,9 @@
               </a> -->
               <!-- Dropdown - Alerts -->
               <!-- <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
+                <h6 class="dropdown-header"> 
                   Alerts Center-->
-
+                  
                 <!-- </h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
@@ -268,7 +270,7 @@
               </a>
               <!-- Dropdown - Messages -->
               <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
-                <h6 class="dropdown-header bg-success">
+                <h6 class="dropdown-header">
                   Message Center
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -320,7 +322,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
@@ -364,7 +366,7 @@
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
-            <div class="card-header py-3 bg-success">
+            <div class="card-header py-3 bg-primary">
               <h6 class="m-0 font-weight-bold text-primary text-gray-100">Employee's Accountability
               </h6>
             </div><br>
@@ -372,6 +374,7 @@
             <!-- Tab pane nav -->
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <ul class="nav nav-tabs">
+
                 <li class="nav-item">
                   <a href="#list" class="nav-link active" role="tab" data-toggle="tab">List</a>
                 </li>
@@ -379,6 +382,11 @@
                 <li class="nav-item">
                   <a href="#add" class="nav-link" role="tab" data-toggle="tab">Add</a>
                 </li>
+
+                <li class="nav-item">
+                  <a href="#edit" class="nav-link" role="tab" data-toggle="tab">Edit</a>
+                </li>
+
               </ul>
             </div>
 
@@ -422,21 +430,227 @@
                         </tr>
                       </tfoot>
                       <tbody>
-                        @foreach ($accountabilities as $accountability)
                         <tr>
-                          <td>{{$accountability->name}}</td>
-                          <td>{{$accountability->designation}}</td>
-                          <td>{{$accountability->computer_name}}</td>
-                          <td>{{$accountability->location}}</td>
-                          <td>{{$accountability->local_user}}</td>
-                          <td>{{$accountability->local_password}}</td>
-                          <td>{{$accountability->domain_acc}}</td>
-                          <td>{{$accountability->domain_pass}}</td>
-                          <td>{{$accountability->ip_address}}</td>
-                          <td>{{$accountability->mac_address}}</td>
-                          <td>{{$accountability->email}}</td>
+                          <td>Tiger Nixon</td>
+                          <td>System Architect</td>
+                          <td>Edinburgh</td>
+                          <td>61</td>
+                          <td>2011/04/25</td>
+                          <td>$320,800</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
                         </tr>
-                        @endforeach
+                        <tr>
+                          <td>Garrett Winters</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>63</td>
+                          <td>2011/07/25</td>
+                          <td>$170,750</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Ashton Cox</td>
+                          <td>Junior Technical Author</td>
+                          <td>San Francisco</td>
+                          <td>66</td>
+                          <td>2009/01/12</td>
+                          <td>$86,000</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Cedric Kelly</td>
+                          <td>Senior Javascript Developer</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2012/03/29</td>
+                          <td>$433,060</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Airi Satou</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>33</td>
+                          <td>2008/11/28</td>
+                          <td>$162,700</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Brielle Williamson</td>
+                          <td>Integration Specialist</td>
+                          <td>New York</td>
+                          <td>61</td>
+                          <td>2012/12/02</td>
+                          <td>$372,000</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Herrod Chandler</td>
+                          <td>Sales Assistant</td>
+                          <td>San Francisco</td>
+                          <td>59</td>
+                          <td>2012/08/06</td>
+                          <td>$137,500</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Rhona Davidson</td>
+                          <td>Integration Specialist</td>
+                          <td>Tokyo</td>
+                          <td>55</td>
+                          <td>2010/10/14</td>
+                          <td>$327,900</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Colleen Hurst</td>
+                          <td>Javascript Developer</td>
+                          <td>San Francisco</td>
+                          <td>39</td>
+                          <td>2009/09/15</td>
+                          <td>$205,500</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Sonya Frost</td>
+                          <td>Software Engineer</td>
+                          <td>Edinburgh</td>
+                          <td>23</td>
+                          <td>2008/12/13</td>
+                          <td>$103,600</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Jena Gaines</td>
+                          <td>Office Manager</td>
+                          <td>London</td>
+                          <td>30</td>
+                          <td>2008/12/19</td>
+                          <td>$90,560</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Quinn Flynn</td>
+                          <td>Support Lead</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2013/03/03</td>
+                          <td>$342,000</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Charde Marshall</td>
+                          <td>Regional Director</td>
+                          <td>San Francisco</td>
+                          <td>36</td>
+                          <td>2008/10/16</td>
+                          <td>$470,600</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Haley Kennedy</td>
+                          <td>Senior Marketing Designer</td>
+                          <td>London</td>
+                          <td>43</td>
+                          <td>2012/12/18</td>
+                          <td>$313,500</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Tatyana Fitzpatrick</td>
+                          <td>Regional Director</td>
+                          <td>London</td>
+                          <td>19</td>
+                          <td>2010/03/17</td>
+                          <td>$385,750</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Michael Silva</td>
+                          <td>Marketing Designer</td>
+                          <td>London</td>
+                          <td>66</td>
+                          <td>2012/11/27</td>
+                          <td>$198,500</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Paul Byrd</td>
+                          <td>Chief Financial Officer (CFO)</td>
+                          <td>New York</td>
+                          <td>64</td>
+                          <td>2010/06/09</td>
+                          <td>$725,000</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -446,86 +660,161 @@
                 <!-- tab 2 is the form to add a new employee -->
                 <div role="tabpanel" class="tab-pane" id="add">
                 <!-- Form starts here -->
-                  <form action="/home" method="post">
-                    @csrf
+                  <form>
                     <div class="form-row">
                       <div class="col-md-4 mb-3">
                         <label>Full Name</label>
-                        <input type="text" class="form-control" name="name" value="{{old('name')}}" placeholder="Full Name here..." required>
+                        <input type="text" class="form-control" placeholder="Full Name here..." value="Sample Name" required>
                       </div>
 
                       <div class="col-md-4 mb-3">
                         <label>Designation</label>
-                        <input type="text" class="form-control" name="designation" value="{{old('designation')}}" placeholder="Designation here..." required>
+                        <input type="text" class="form-control" placeholder="Designation here..." value="Head IT" required>
                       </div>
 
                       <div class="col-md-4 mb-3">
                         <label>Computer Name</label>
-                        <input type="text" class="form-control" name="computer_name" value="{{old('computer_name')}}" placeholder="Computer Name here..." required>
+                        <input type="text" class="form-control" placeholder="Computer Name here..." value="MyComputer" required>
                       </div>
                     </div>
 
                     <div class="form-row">
                       <div class="col-md-5 mb-3">
                         <label>Location</label>
-                        <input type="text" class="form-control" name="location" value="{{old('location')}}" placeholder="Location here..." required>
+                        <input type="text" class="form-control" placeholder="Location here..." required>
                       </div>
 
                       <div class="col-md-3 mb-3">
                         <label>Local User</label>
-                        <input type="text" class="form-control" name="local_user" value="{{old('local_user')}}" placeholder="Local User here..." required>
+                        <input type="text" class="form-control" placeholder="Local User here..." required>
                       </div>
 
                       <div class="col-md-4 mb-3">
                         <label>Local Password</label>
-                        <input type="text" class="form-control" name="local_password" value="{{old('local_password')}}" placeholder="Local Password here..." required>
+                        <input type="text" class="form-control" placeholder="Local Password here..." required>
                       </div>
                     </div>
 
                     <div class="form-row">
                       <div class="col-md-3 mb-3">
                         <label>Domain Account</label>
-                        <input type="text" class="form-control" name="domain_acc" value="{{old('domain_acc')}}" placeholder="Domain Account here..." required>
+                        <input type="text" class="form-control" placeholder="Domain Account here..." required>
                       </div>
 
                       <div class="col-md-3 mb-3">
                         <label>Domain Password</label>
-                        <input type="text" class="form-control" name="domain_pass" value="{{old('domain_pass')}}" placeholder="Domain Password here..." required>
+                        <input type="text" class="form-control" placeholder="Domain Password here..." required>
                       </div>
 
                       <div class="col-md-3 mb-3">
                         <label>IP Address</label>
-                        <input type="text" class="form-control" name="ip_address" value="{{old('ip_address')}}" placeholder="IP Address here..." required>
+                        <input type="text" class="form-control" placeholder="IP Address here..." required>
                       </div>
 
                       <div class="col-md-3 mb-3">
                         <label>MAC Address</label>
-                        <input type="text" class="form-control" name="mac_address" value="{{old('mac_address')}}" placeholder="MAC Address here..." required>
+                        <input type="text" class="form-control" placeholder="MAC Address here..." required>
                       </div>
                     </div>
 
                     <div class="form-row">
                         <label>Email</label>
-                        <input type="email" class="form-control" name="email" placeholder="Email here..." value="{{old('email')}}"  required>
+                        <input type="text" class="form-control" placeholder="Email here..." value="my_email@sample.com" required>
                     </div>
                     <br>
-                    <button class="btn btn-block btn-outline-success" type="submit">Submit form</button>
+                    <button class="btn btn-block btn-outline-primary" type="submit">Submit form</button>
                   </form>
                 <!-- Form ends here -->
                 </div>
+                <!-- End of Tab 2 -->
+
+                <!-- Tab 3 edit data in the database -->
+                <div role="tabpanel" class="tab-pane" id="edit">
+                  <!-- Edit Form starts here -->
+
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search employee name here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">Search</button>
+                    </div>
+                  </div>
+
+                  <form>
+                    <div class="form-row">
+                      <div class="col-md-4 mb-3">
+                        <label>Full Name</label>
+                        <input type="text" class="form-control bg-outline-success" placeholder="Full Name here..." value="Sample Name" required>
+                      </div>
+
+                      <div class="col-md-4 mb-3">
+                        <label>Designation</label>
+                        <input type="text" class="form-control" placeholder="Designation here..." value="Head IT" required>
+                      </div>
+
+                      <div class="col-md-4 mb-3">
+                        <label>Computer Name</label>
+                        <input type="text" class="form-control" placeholder="Computer Name here..." value="MyComputer" required>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col-md-5 mb-3">
+                        <label>Location</label>
+                        <input type="text" class="form-control" placeholder="Location here..." required>
+                      </div>
+
+                      <div class="col-md-3 mb-3">
+                        <label>Local User</label>
+                        <input type="text" class="form-control" placeholder="Local User here..." required>
+                      </div>
+
+                      <div class="col-md-4 mb-3">
+                        <label>Local Password</label>
+                        <input type="text" class="form-control" placeholder="Local Password here..." required>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="col-md-3 mb-3">
+                        <label>Domain Account</label>
+                        <input type="text" class="form-control" placeholder="Domain Account here..." required>
+                      </div>
+
+                      <div class="col-md-3 mb-3">
+                        <label>Domain Password</label>
+                        <input type="text" class="form-control" placeholder="Domain Password here..." required>
+                      </div>
+
+                      <div class="col-md-3 mb-3">
+                        <label>IP Address</label>
+                        <input type="text" class="form-control" placeholder="IP Address here..." required>
+                      </div>
+
+                      <div class="col-md-3 mb-3">
+                        <label>MAC Address</label>
+                        <input type="text" class="form-control" placeholder="MAC Address here..." required>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label>Email</label>
+                        <input type="text" class="form-control" placeholder="Email here..." value="my_email@sample.com" required>
+                    </div>
+                    <br>
+                    <button class="btn btn-block btn-outline-primary" type="submit">Submit form</button>
+                  </form>
+                  <!-- Edit form ends here -->
+                </div>
+                
               </div>
-
-
-
             </div>
           </div>
-
         </div>
         <!-- /.container-fluid -->
 
       </div>
       <!-- End of Main Content -->
-
+          
 
         </div>
         <!-- /.container-fluid -->
@@ -591,29 +880,18 @@
 
   <!-- Data Table scripts-->
   <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready( function () {
+        $('#myDataTable').DataTable();
+    } );
+  </script>
 
   <!-- Export Button -->
   <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
-
+  
   <!-- Print Button -->
   <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
-  <script>
-      $(document).ready( function () {
-          $('#myDataTable').DataTable();
-      } );
-
-      var table = $('#myDataTable').DataTable();
-
-      new $.fn.dataTable.Buttons( table, {
-          dom: 'Bfrtip',
-          buttons: [
-              'excel'
-          ]
-      } );
-
-      table.buttons().container()
-          .appendTo( $('.col-sm-6:eq(0)', table.table().container() ) );
-  </script>
+  
 </body>
 
 </html>
