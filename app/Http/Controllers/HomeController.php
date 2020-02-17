@@ -23,6 +23,42 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $accountabilities = \App\Accountability::all();
+        return view('home', compact('accountabilities'));
+    }
+
+    public function store()
+    {
+      $data = request()->validate([
+        'name'=>'required',
+        'designation'=>'required',
+        'computer_name'=>'required',
+        'location'=>'required',
+        'local_user'=>'required',
+        'local_password'=>'required',
+        'domain_acc'=>'required',
+        'domain_pass'=>'required',
+        'ip_address'=>'required',
+        'mac_address'=>'required',
+        'email'=>'required',
+        'name'=>'required'
+      ]);
+
+      \App\Accountability::create($data);
+      // $accountability = new \App\Accountability();
+      //
+      // $accountability->name = request('name');
+      // $accountability->designation = request('designation');
+      // $accountability->computer_name = request('computer_name');
+      // $accountability->location = request('location');
+      // $accountability->local_user = request('local_user');
+      // $accountability->local_password = request('local_password');
+      // $accountability->domain_acc = request('domain_acc');
+      // $accountability->domain_pass = request('domain_pass');
+      // $accountability->ip_address = request('ip_address');
+      // $accountability->mac_address = request('mac_address');
+      // $accountability->email = request('email');
+      // $accountability->save();
+      return redirect()->back();
     }
 }

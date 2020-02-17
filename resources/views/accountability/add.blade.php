@@ -320,7 +320,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
@@ -422,21 +422,227 @@
                         </tr>
                       </tfoot>
                       <tbody>
-                        @foreach ($accountabilities as $accountability)
                         <tr>
-                          <td>{{$accountability->name}}</td>
-                          <td>{{$accountability->designation}}</td>
-                          <td>{{$accountability->computer_name}}</td>
-                          <td>{{$accountability->location}}</td>
-                          <td>{{$accountability->local_user}}</td>
-                          <td>{{$accountability->local_password}}</td>
-                          <td>{{$accountability->domain_acc}}</td>
-                          <td>{{$accountability->domain_pass}}</td>
-                          <td>{{$accountability->ip_address}}</td>
-                          <td>{{$accountability->mac_address}}</td>
-                          <td>{{$accountability->email}}</td>
+                          <td>Tiger Nixon</td>
+                          <td>System Architect</td>
+                          <td>Edinburgh</td>
+                          <td>61</td>
+                          <td>2011/04/25</td>
+                          <td>$320,800</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
                         </tr>
-                        @endforeach
+                        <tr>
+                          <td>Garrett Winters</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>63</td>
+                          <td>2011/07/25</td>
+                          <td>$170,750</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Ashton Cox</td>
+                          <td>Junior Technical Author</td>
+                          <td>San Francisco</td>
+                          <td>66</td>
+                          <td>2009/01/12</td>
+                          <td>$86,000</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Cedric Kelly</td>
+                          <td>Senior Javascript Developer</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2012/03/29</td>
+                          <td>$433,060</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Airi Satou</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>33</td>
+                          <td>2008/11/28</td>
+                          <td>$162,700</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Brielle Williamson</td>
+                          <td>Integration Specialist</td>
+                          <td>New York</td>
+                          <td>61</td>
+                          <td>2012/12/02</td>
+                          <td>$372,000</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Herrod Chandler</td>
+                          <td>Sales Assistant</td>
+                          <td>San Francisco</td>
+                          <td>59</td>
+                          <td>2012/08/06</td>
+                          <td>$137,500</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Rhona Davidson</td>
+                          <td>Integration Specialist</td>
+                          <td>Tokyo</td>
+                          <td>55</td>
+                          <td>2010/10/14</td>
+                          <td>$327,900</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Colleen Hurst</td>
+                          <td>Javascript Developer</td>
+                          <td>San Francisco</td>
+                          <td>39</td>
+                          <td>2009/09/15</td>
+                          <td>$205,500</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Sonya Frost</td>
+                          <td>Software Engineer</td>
+                          <td>Edinburgh</td>
+                          <td>23</td>
+                          <td>2008/12/13</td>
+                          <td>$103,600</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Jena Gaines</td>
+                          <td>Office Manager</td>
+                          <td>London</td>
+                          <td>30</td>
+                          <td>2008/12/19</td>
+                          <td>$90,560</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Quinn Flynn</td>
+                          <td>Support Lead</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2013/03/03</td>
+                          <td>$342,000</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Charde Marshall</td>
+                          <td>Regional Director</td>
+                          <td>San Francisco</td>
+                          <td>36</td>
+                          <td>2008/10/16</td>
+                          <td>$470,600</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Haley Kennedy</td>
+                          <td>Senior Marketing Designer</td>
+                          <td>London</td>
+                          <td>43</td>
+                          <td>2012/12/18</td>
+                          <td>$313,500</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Tatyana Fitzpatrick</td>
+                          <td>Regional Director</td>
+                          <td>London</td>
+                          <td>19</td>
+                          <td>2010/03/17</td>
+                          <td>$385,750</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Michael Silva</td>
+                          <td>Marketing Designer</td>
+                          <td>London</td>
+                          <td>66</td>
+                          <td>2012/11/27</td>
+                          <td>$198,500</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
+                        <tr>
+                          <td>Paul Byrd</td>
+                          <td>Chief Financial Officer (CFO)</td>
+                          <td>New York</td>
+                          <td>64</td>
+                          <td>2010/06/09</td>
+                          <td>$725,000</td>
+                          <td>Heroku</td>
+                          <td>123admin</td>
+                          <td>192.168.1.0</td>
+                          <td>NONE</td>
+                          <td>NONE</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -446,67 +652,66 @@
                 <!-- tab 2 is the form to add a new employee -->
                 <div role="tabpanel" class="tab-pane" id="add">
                 <!-- Form starts here -->
-                  <form action="/home" method="post">
-                    @csrf
+                  <form>
                     <div class="form-row">
                       <div class="col-md-4 mb-3">
                         <label>Full Name</label>
-                        <input type="text" class="form-control" name="name" value="{{old('name')}}" placeholder="Full Name here..." required>
+                        <input type="text" class="form-control" placeholder="Full Name here..." value="Sample Name" required>
                       </div>
 
                       <div class="col-md-4 mb-3">
                         <label>Designation</label>
-                        <input type="text" class="form-control" name="designation" value="{{old('designation')}}" placeholder="Designation here..." required>
+                        <input type="text" class="form-control" placeholder="Designation here..." value="Head IT" required>
                       </div>
 
                       <div class="col-md-4 mb-3">
                         <label>Computer Name</label>
-                        <input type="text" class="form-control" name="computer_name" value="{{old('computer_name')}}" placeholder="Computer Name here..." required>
+                        <input type="text" class="form-control" placeholder="Computer Name here..." value="MyComputer" required>
                       </div>
                     </div>
 
                     <div class="form-row">
                       <div class="col-md-5 mb-3">
                         <label>Location</label>
-                        <input type="text" class="form-control" name="location" value="{{old('location')}}" placeholder="Location here..." required>
+                        <input type="text" class="form-control" placeholder="Location here..." required>
                       </div>
 
                       <div class="col-md-3 mb-3">
                         <label>Local User</label>
-                        <input type="text" class="form-control" name="local_user" value="{{old('local_user')}}" placeholder="Local User here..." required>
+                        <input type="text" class="form-control" placeholder="Local User here..." required>
                       </div>
 
                       <div class="col-md-4 mb-3">
                         <label>Local Password</label>
-                        <input type="text" class="form-control" name="local_password" value="{{old('local_password')}}" placeholder="Local Password here..." required>
+                        <input type="text" class="form-control" placeholder="Local Password here..." required>
                       </div>
                     </div>
 
                     <div class="form-row">
                       <div class="col-md-3 mb-3">
                         <label>Domain Account</label>
-                        <input type="text" class="form-control" name="domain_acc" value="{{old('domain_acc')}}" placeholder="Domain Account here..." required>
+                        <input type="text" class="form-control" placeholder="Domain Account here..." required>
                       </div>
 
                       <div class="col-md-3 mb-3">
                         <label>Domain Password</label>
-                        <input type="text" class="form-control" name="domain_pass" value="{{old('domain_pass')}}" placeholder="Domain Password here..." required>
+                        <input type="text" class="form-control" placeholder="Domain Password here..." required>
                       </div>
 
                       <div class="col-md-3 mb-3">
                         <label>IP Address</label>
-                        <input type="text" class="form-control" name="ip_address" value="{{old('ip_address')}}" placeholder="IP Address here..." required>
+                        <input type="text" class="form-control" placeholder="IP Address here..." required>
                       </div>
 
                       <div class="col-md-3 mb-3">
                         <label>MAC Address</label>
-                        <input type="text" class="form-control" name="mac_address" value="{{old('mac_address')}}" placeholder="MAC Address here..." required>
+                        <input type="text" class="form-control" placeholder="MAC Address here..." required>
                       </div>
                     </div>
 
                     <div class="form-row">
                         <label>Email</label>
-                        <input type="text" class="form-control" name="email" placeholder="Email here..." value="{{old('email')}}"  required>
+                        <input type="text" class="form-control" placeholder="Email here..." value="my_email@sample.com" required>
                     </div>
                     <br>
                     <button class="btn btn-block btn-outline-success" type="submit">Submit form</button>
