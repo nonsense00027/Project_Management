@@ -14,9 +14,11 @@
 Route::get('/', function () {
     return view('auth.login');
 });
+// Route::get('/', 'LoginController@index');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index');
 Route::post('/home', 'HomeController@store');
 // Route::get('/home', 'AccountabilityController@index');

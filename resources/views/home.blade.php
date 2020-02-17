@@ -506,7 +506,7 @@
 
                     <div class="form-row">
                         <label>Email</label>
-                        <input type="text" class="form-control" name="email" placeholder="Email here..." value="{{old('email')}}"  required>
+                        <input type="email" class="form-control" name="email" placeholder="Email here..." value="{{old('email')}}"  required>
                     </div>
                     <br>
                     <button class="btn btn-block btn-outline-success" type="submit">Submit form</button>

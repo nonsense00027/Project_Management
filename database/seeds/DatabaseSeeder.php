@@ -16,5 +16,8 @@ class DatabaseSeeder extends Seeder
             'email'=>'admin@hr.com',
             'password'=>Hash::make('hrpass')
         ]);
+        // DB::table('departments')->insert([
+        //     'name'=>'Accounting Department'
+        // ]);
     }
 }

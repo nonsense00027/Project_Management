@@ -45,6 +45,7 @@ class HomeController extends Controller
       ]);
 
       \App\Accountability::create($data);
+      
       // $accountability = new \App\Accountability();
       //
       // $accountability->name = request('name');
